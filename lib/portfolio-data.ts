@@ -44,6 +44,7 @@ export interface Award {
 export interface Certification {
   title: string
   href?: string
+  image?: string
 }
 
 export const profile = {
@@ -55,7 +56,6 @@ export const profile = {
   github: 'https://github.com/ashu-1301',
   resume: 'https://pdflink.to/b2fcb70f/',
   location: 'Bengaluru, Karnataka, India',
-  site: 'www.ashritha.dev',
 }
 
 export const sections = [
@@ -255,17 +255,32 @@ export const awards: Award[] = [
 ]
 
 export const certifications: Certification[] = [
-  { title: 'GEN AI Camp — Completing Certificate, AlgoUniversity' },
-  { title: 'AWS Cloud Practitioner Essentials' },
-  { title: 'Infosys Springboard — C Programming' },
-  { title: 'Infosys Springboard — DevOps Fundamentals' },
-  { title: 'Infosys Springboard — Network Fundamentals' },
+  {
+    title: 'GEN AI Camp — Completing Certificate, AlgoUniversity',
+    image: '/images/GenAI.png',
+  },
+  {
+    title: 'AWS Cloud Practitioner Essentials',
+    image: '/images/AWS.png',
+  },
+  {
+    title: 'Infosys Springboard — Introduction to Cyber Security',
+    image: '/images/CYBER.png',
+  },
+  {
+    title: 'Infosys Springboard — Cryptography in IT Security and Hacking',
+    image: '/images/CRYPTO.png',
+  },
+  {
+    title: 'Infosys Springboard — Network Fundamentals',
+    image: '/images/NETWORK.png',
+  },
 ]
 
 export const about = {
   headline: ['CURIOUS', 'BY DEFAULT.', 'PRECISE', 'BY PRACTICE.'],
   body: 'I am a final-year Computer Science undergraduate with research experience and a strong foundation in machine learning, data science and software engineering. I build scalable analytics solutions, predictive models and data-driven applications with Python, SQL and Power BI.',
-  meta: ['Final Year', 'Machine Learning', 'Data Science', 'Software Engineering'],
+  meta: ['Agentic AI', 'Machine Learning', 'Data Science', 'Data Engineering'],
   interests: [
     'Analytics Solutions',
     'Predictive Models',
